@@ -1,9 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {API_KEY} from "./config";
+
+import SearchBar from "./components/search_bar";
+
+
 //Everything in React is a component
 //So here we want to create a component that produces some HTML
 const App = () => {
-    return <div>Hello World!</div>;
+    return (
+    <div>
+        <SearchBar />
+    </div>
+    );
 }
 
 //Then we want to output/render the component's generated HTML to the DOM
